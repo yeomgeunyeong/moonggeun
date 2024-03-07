@@ -1,0 +1,365 @@
+@charset "utf-8";
+#wrap{
+    width: 100%;
+}
+
+
+
+/* header영역 */
+#header{
+    width: 100%;
+    height: 100px;
+}
+
+.logo{
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+
+}
+
+.logo a{
+    display: block;
+    width: 100%;
+    height: 270px;
+    background: url("../img/header_txt_logo.png") no-repeat;
+    background-size: 70%;
+    background-position: center center;
+    text-indent: -9999px;
+}
+
+
+
+
+/* section영역 */
+#section{
+    width: 100%;
+    /* height: 100vh; */
+    background: url("../img/bbbb.png") no-repeat;
+    background-position: bottom left;
+    background-size: 40%;
+    background-attachment: fixed;
+    /* border: 1px solid red; */
+}
+.contact{
+    width: 1600px;
+    /* height: 500px;   */
+    margin: 0 auto;
+    margin-top: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact h2.title{
+    width: 25%;
+    height: 90px;
+    /* border: 1px solid red; */
+    font-size: 40px;
+    border-bottom: 1px solid black;
+}
+
+.form_box{
+    width: 35%;
+    /* border: 1px solid red; */
+}
+
+.form_box form{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+.form1{
+    /* border: 1px solid yellow; */
+    display: flex;
+    flex-direction: column;
+}
+
+.form1 input, select{
+    margin-bottom: 20px;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.radio{
+    text-align: center;
+}
+
+.textarea{
+    /* border: 1px solid green; */
+}
+
+textarea{
+    width: 250px;
+    height: 360px;
+}
+
+.send{
+    width: 100%;
+    /* border: 1px solid black; */
+    text-align: center;
+    margin-top: 50px;
+}
+
+.send_btn{
+    width: 90%;
+    background-color: #F91208;
+    color: #FFF0E1;
+    padding: 15px 0;
+    cursor: pointer;
+    border: none;
+}
+
+
+.info{
+    width: 30%;
+    background-color: #FFF0E1;
+    border-radius: 50px 0 0 50px;
+    padding: 30px;
+}
+
+.info p{
+    font-size: 20px;
+    text-align: right;
+}
+
+.info ol {
+    padding-left: 30px;
+    margin-top: 20px;
+}
+
+.info ol li{
+    list-style: decimal;
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+
+
+
+
+/* footer영역 */
+#footer{
+    width: 100%;
+    height: 100px;
+    background-color: #FFF0E1;
+    margin-top: 30px;
+    /* position: fixed;
+    bottom: 0;
+    z-index: 1; */
+}
+
+.f_inner{
+    width: 1460px;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.f_inner p{
+    font-size: 20px;
+    text-align: center;
+}
+
+.f_inner .copy{
+    width: 30%;
+}
+
+.f_inner img{
+    width: 45px;
+}
+
+.f_logo{
+    width: 30%;
+    text-align: center;
+    height: 100px;
+}
+
+.f_logo img{
+    width: 20%;
+}
+
+.f_last{
+    width: 30%;
+    display: flex;
+}
+
+.num{
+    margin-right: 100px;
+    font-weight: bold;
+}
+
+.insta{
+    margin-right: 30px;
+}
+
+.insta, .tube{
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+/* pop 영역 */
+.pop{
+    width: 500px;
+    height: 150px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 1px 1px 5px black;
+    display: none;
+}
+
+.pop .line_t{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 30px;
+    background-color: #F91208;
+}
+
+.pop .line_r{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 30px;
+    height: 90px;
+    background-color: #F91208;
+}
+
+.pop p{
+    line-height: 150px;
+    text-align: center;
+    font-size: 30px;
+}
+
+
+.close{
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size:17px;
+    padding: 0 10px;
+    margin-top: 10px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+/* 반응형  max-width: 599px*/
+@media screen and (max-width: 599px){
+
+    .logo a{
+        background-size: 100%;
+    }
+
+    #section{
+        background-size: 100%;
+    }
+
+    .contact{
+        width: 100%;
+        flex-direction: column;
+        align-content: space-between;
+        margin-top: 100px;
+        /* border: 1px solid red; */
+    }
+
+    .contact h2.title{
+        /* font-size: 30px; */
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .form_box{
+        width: 100%;
+    }
+
+    .info{
+        width: 100%;
+        margin-top: 50px;
+        margin-bottom: 150px;
+    }
+
+    .info p{
+        font-size: 17px;
+    }
+
+    .info ol li{
+        font-size: 15px;
+    }
+
+    .f_inner{
+        width: 100%;
+        height: 100%;
+        /* border: 1px solid black; */
+    }
+
+    .f_inner p{
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .f_logo img{
+        width: 50%;
+        object-fit: contain;
+        /* border: 1px solid red; */
+    }
+
+    .f_last{
+        /* border: 1px solid red; */
+        padding: 0;
+    }
+    
+    .num{
+        width: 50%;
+        margin-right: 0;
+        /* border: 1px solid black; */
+    }
+
+    .insta{
+        margin-right: -12px;
+    }
+
+    .insta, .tube{
+        width: 20px;
+        height: 30px;
+        object-fit: contain;
+        cursor: pointer;
+        margin-top: 5px;
+    }
+
+
+
+    .pop{
+        width: 70%;
+    }
+
+    .pop p{
+        font-size: 15px;
+    }
+}

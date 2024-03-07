@@ -1,0 +1,195 @@
+@charset "utf-8";
+
+/* header영역 */
+#header{
+    width: 100%;
+}
+
+.logo{
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+
+}
+
+.logo a{
+    display: block;
+    width: 100%;
+    height: 270px;
+    background: url("../img/header_txt_logo.png") no-repeat;
+    background-size: 70%;
+    background-position: center center;
+    text-indent: -9999px;
+}
+
+
+
+
+/* section영역 */
+#section{
+    width: 1500px;
+    height: 600px;
+    margin: 0 auto;
+    margin-top: 250px;
+    position: relative;
+}
+
+#section img{
+    width: 600px;
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    z-index: 5;   
+}
+
+iframe{
+    width: 800px;
+    height: 500px;
+    position: absolute;
+    right: 20px;
+    top: 0;
+    border-radius: 30px;
+}
+
+
+
+
+
+
+/* footer영역 */
+#footer{
+    width: 100%;
+    height: 100px;
+    background-color: #FFF0E1;
+    /* position: fixed;
+    bottom: 0;
+    z-index: 1; */
+}
+
+.f_inner{
+    width: 1460px;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.f_inner p{
+    font-size: 20px;
+    text-align: center;
+}
+
+.f_inner .copy{
+    width: 30%;
+}
+
+.f_inner img{
+    width: 45px;
+}
+
+.f_logo{
+    width: 30%;
+    text-align: center;
+    height: 100px;
+}
+
+.f_logo img{
+    width: 20%;
+}
+
+.f_last{
+    width: 30%;
+    display: flex;
+}
+
+.num{
+    margin-right: 100px;
+    font-weight: bold;
+}
+
+.insta{
+    margin-right: 30px;
+}
+
+.insta, .tube{
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+/* 반응형  max-width: 599px*/
+@media screen and (max-width: 599px){
+
+    .logo a{
+        background-size: 100%;
+        margin-top: -30px;
+    }
+
+    #section{
+        width: 90%;
+        height: 600px;
+        /* border: 1px solid red; */
+    }
+
+    #section img{
+        /* border: 1px solid red; */
+        width: 70%;
+        left: 0;
+        top: 300px;
+    }
+
+    iframe{
+        width: 90%;
+        height: 60%;
+    }
+
+   
+    .f_inner{
+        width: 100%;
+        height: 100%;
+        /* border: 1px solid black; */
+    }
+
+    .f_inner p{
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .f_logo img{
+        width: 50%;
+        object-fit: contain;
+        /* border: 1px solid red; */
+    }
+
+    .f_last{
+        /* border: 1px solid red; */
+        padding: 0;
+    }
+    
+    .num{
+        width: 50%;
+        margin-right: 0;
+        /* border: 1px solid black; */
+    }
+
+    .insta{
+        margin-right: -12px;
+    }
+
+    .insta, .tube{
+        width: 20px;
+        height: 30px;
+        object-fit: contain;
+        cursor: pointer;
+        margin-top: 5px;
+    }
+}
